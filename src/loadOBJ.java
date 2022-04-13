@@ -11,30 +11,20 @@ public class loadOBJ {
      * file
      */
     public static void main(String[] args) throws FileNotFoundException {
-//        File myObj = new File("teapot.obj");
-//        File text = new File("teapot-Copy.txt");
-//        Scanner readMe = new Scanner(myObj);
 
-//        try {
-//            File myObj = new File("teapot-Copy.txt");
-//            Scanner readMe = new Scanner(myObj);
-//            while (readMe.hasNext()) {
-//                String data = readMe.nextLine();
-//                System.out.println(data);
-//            }
-//            readMe.close();
-//        } catch (FileNotFoundException e) {
-//            System.out.println("Error");
-//            e.printStackTrace();
-//        }
-
-//        System.out.println("File name: " + myObj.getName());
-//        System.out.println(text.getName());
         File file = new File("C:\\Users\\Zeeker\\IdeaProjects\\Raytrace\\src\\teapot-Copy.txt");
         Scanner sc = new Scanner(file);
 
         while (sc.hasNext()) {
             System.out.println(sc.nextLine());
+        }
+    }
+
+    public static int absolute(int v) {
+        if (v > 0) {
+            return v;
+        } else {
+            return v * -1;
         }
     }
 }
